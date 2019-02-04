@@ -11,10 +11,7 @@ const Button = ({ handleClick, text}) => (
 
 const App = (props) => {
   const [selected, setSelected] = useState(0)
-  const [vote, setVotes] = useState([6].fill(0))
-
-    let votes = new Array(anecdotes.length).fill(0)
-   
+  const [vote, setVotes] = useState([6].fill(0))   
     
   const handleNextClick = () => {
       const randomi = Math.floor(Math.random() * 5)
